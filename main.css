@@ -1,0 +1,80 @@
+body{
+    background: linear-gradient(90deg, rgb(240, 157, 189)10%, rgb(16, 141, 179) 140%);
+}
+.form{
+    width:70vw;
+    height:70vh;
+    background-color: white;
+    margin:auto auto;
+    padding:30px 50px;
+}
+.form label{
+    display: block;
+    padding-top:10px;
+   
+}
+h1{
+    text-align: center;
+}
+input, textarea{
+    width:90%;
+}
+input{
+    height:25px;
+}
+#firstname{
+    border-color:hotpink;
+}
+
+input[type="email"]:focus, textarea:focus {
+    outline: 2px solid blue;
+  }
+.check{
+    align-items: center;
+    display:flex;
+    justify-content: center;
+}
+.check p{
+    padding-right: 10px;
+}
+#toggle{
+    display:none;
+}
+.toggle{
+    width:80px;
+    height:30px;
+    background-color: grey;
+    position:relative;
+    border-radius: 50px;
+}
+.toggle::before{
+    content: "";
+    display: block;
+    position:absolute;
+    width:30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    top:5px;
+    left:5px;
+    transition:1s;
+}
+#toggle:checked + .toggle{
+    background-color: blueviolet;
+}
+#toggle:checked + .toggle::before{
+    left:45px;
+}
+/*button{
+    margin: 20px auto;
+    text-align: center;
+    height:30px;
+    width:120px
+}*/
+#submitButton{
+    width:140px;
+    height: 30px;
+    margin:20px auto;
+    text-align: center; /* Input zentrieren */
+    display: table; 
+}
